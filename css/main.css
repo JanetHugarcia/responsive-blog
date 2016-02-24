@@ -4,7 +4,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	/*font-family: 'Courgette', cursive;*/
-	font-size: 16px;
+	font-size: 12px;
 	background: #2D2735;
 	color:white;
 }
@@ -12,25 +12,27 @@ h1,h2{
 	font-family: 'Courgette', cursive;
 	color:#F9B96C;
 }
-header,.col-5,.col-7{
-	outline: 1px solid yellow;
-	color:yellow;
-}
 
 header{
+	outline: 1px solid yellow;
+	
+}
+
+header,footer{
 	background: #1C1821;
 }
 header img{
-	height: 90px;
+	height: 70px;
 }
+
 .menu{
 		list-style: none;
 		line-height: 42px;
 		/*outline: 1px solid red;*/
 		padding-top: 10px;
 		font-style: italic;
-	
-		font-size: 1.2rem;
+		font-weight: 600;
+		font-size: 0.8rem;
 }
 .menu li{
 	display: inline-block;
@@ -45,7 +47,7 @@ header img{
 	text-decoration: none;
 	text-transform: uppercase;
 	display: inline-block;
-	padding: 10px 15px;
+	padding: 10px 10px;
 	width: 100%;
 }
 .menu a:hover{
@@ -63,40 +65,127 @@ header img{
 	
 }
 .fondo h1{
-	font-size: 6.5rem;
+	font-size: 4rem;
 	font-weight: 600;
 }
 .fmorado{
 	background-color: #1C1821;
 	width: 66%;
-	padding: 4% 6% 1%;
+	padding: 5% 6% 3%;
 	margin:9% 17%;
 }
 .fmorado ul{
 	color:white;
 	font-style: italic;
 	list-style-type: none;
-	font-size: 1.2rem;
+	font-size: 0.8rem;
 }
 .fmorado ul li{
 	display: inline-block;
-	padding:25px;
+	padding:5px 10px;
 }
 /*galeria*/
 #slide{
-	margin-top: 3%;
+	margin-top: 2%;
+	font-style: italic;
 }
 #slide article{
 	background-color: #1C1821;
-	padding-bottom: 5%;
+	padding-bottom: 8%;
 }
 #slide article h2{
 	padding:3% 0%;
+	font-size: 0.9rem;
+	font-style: normal;
 }
 
 #slide article img{
 	width: 100%;
 }
+/*contenido*/
+#principal{
+	margin-top: 2%;
+}
+#principal .contenido h2{
+	font-size: 0.9rem;
+}
+#principal .contenido img{
+	width: 100%;
+}
+#principal .contenido article{
+	background-color: #1C1821;
+	padding-bottom: 5%;
+	font-size: 0.8rem;
+}
+#principal .contenido p{
+	text-align: left;
+	width: 95%;
+	margin: 0 auto;
+}
+#principal .contenido article *{
+	margin-bottom: 2%;
+}
+#principal .contenido article span{
+	display: block;
+	margin-bottom: 2%;
+	font-size: 0.8rem;
+	font-style: italic;
+}
+/*secundario*/
+	#principal .buscar{
+		width: 100%;
+		background-color: #1C1821;
+	}
+	#principal .buscar input{
+		color:white;
+		background-color: #2D2735;
+		height: 35px;
+		width: 88%;
+		border: none;
+		margin:6% 0% 6% 6%;
+		padding-left:15px;
+	
+	}
+	#principal .perfil{
+		margin-top: 3%;
+		padding:2% 0%;
+	}
+	#principal .perfil *{
+		margin-bottom: 3%;
+	}
+	#principal .perfil img{
+		width: 100%;
+	}
+	#principal .perfil p{
+		width: 80%;
+		margin:0 auto;
+		text-align: justify;
+		font-size: 0.8rem;
+	}
+	#principal .perfil a{
+		display: inline-block;
+		border-radius:50%;
+		width: 40px;
+		height: 40px;
+		padding:10px;
+		margin: 2%;
+		font-size: 18px;
+		background-color: #2D2735;
+		text-decoration: none;
+		color:white;
+	}
+	#principal .th{
+		margin-top: 50%;
+		transform:translatey(-50%);
+	}
+	#principal .perfil a:hover{
+		background-color: rgba(255,255,255,0.2);
+	}
+/*footer*/
+	footer{
+		padding:3% 0%;
+		margin-top: 3%;
+	}
 /* Responsive */
 @media screen and (min-width: 921px) and (max-width: 995px){
 	body {
@@ -116,6 +205,14 @@ header img{
 }
 }
 @media screen and (max-width : 920px) {
+
+	.buscar{
+		display: none;
+	}
+	header{
+		position: fixed;
+		width: 100%;
+	}
 	header img{
 		width: 70%;
 	}
@@ -190,5 +287,12 @@ nav.mostrar{
 }
 
 @media screen and (max-width: 600px) {
+	.fmorado{
+		margin-top:100px;
+	}
+	footer{
+		font-size: 0.9rem;
+		padding: 10% 0%;
+	}
 
 }
