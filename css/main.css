@@ -92,6 +92,10 @@ header img{
 #slide article{
 	background-color: #1C1821;
 	padding-bottom: 8%;
+	
+}
+#slide .img{
+	overflow: hidden;
 }
 #slide article h2{
 	padding:3% 0%;
@@ -101,6 +105,9 @@ header img{
 
 #slide article img{
 	width: 100%;
+}
+#slide article img:hover{
+	transform:scale(1.25);
 }
 /*contenido*/
 #principal{
@@ -211,6 +218,7 @@ header img{
 	}
 	header{
 		position: fixed;
+		z-index: 300;
 		width: 100%;
 	}
 	header img{
