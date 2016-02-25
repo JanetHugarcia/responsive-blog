@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
  }
+ .pt-75px{
+ 	padding-top: 3%;
+ }
 
 /* Grid system */
 
@@ -14,17 +17,6 @@
   margin-left: auto;
 }
 
-@media (max-width: 767px) {
-	.container {
-	    margin:0 !important;
-	    padding:0 !important;
-	}
-
-	.row {
-	    margin:0 !important;
-	    padding:0 !important;
-	}	
-}
 
 @media (min-width: 768px) {
   .container {
@@ -121,4 +113,24 @@
 .col-12 {
 	/* (12 / 12) x 100 */
 	width: 100%;
+}
+@media (max-width: 767px) {
+	.container {
+		width: 96%;
+		margin: 0 auto;
+	    
+	}
+
+	[class*="col-"] {
+		min-height: 3px;
+		padding: 0;
+	}
+	.row {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+	
 }
