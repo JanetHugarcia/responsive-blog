@@ -123,7 +123,7 @@
 
 	[class*="col-"] {
 		min-height: 3px;
-		padding: 0;
+		padding: 2px;
 	}
 	.row {
 	width: 100%;
